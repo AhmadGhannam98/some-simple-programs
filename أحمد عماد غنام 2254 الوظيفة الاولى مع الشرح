@@ -1,0 +1,180 @@
+Question 1: Python Basics?
+A-Define a list that contain the names of graduated students” 5 students at least”:
+ Create a program that accept student name and prints if the user is graduated or not.
+gl=[]
+for i in range (0,10):
+ name = input('enter your name : ')
+ gg = int(input('enter your graduation grade : '))
+ if gg >= 60:
+ gl.append(name)
+ print(gl)
+ تم تعريف قائمة فارغة وتمرير أسماء 
+طلاب مع درجاتهم ليقرر البرنامج في 
+حال كانوا ناجحين أم لا.. وتخزين 
+أسمائهم في القائمة
+lista=[]
+for i in range (1,1000):
+ if i%2 !=0 :
+ lista.append(i)
+print(lista)
+تم انشاء حلقة for للاعداد من  ١ حتى 
+١٠٠٠ وإختبار شرط التحقق الاعداد 
+الزوجية والعدد الذي لايحقق الشرط تتم 
+إضافته للقائمة على أنه عدد فردي
+lista = [ 'math' , 'network' , 'programming', 'physics','music']
+l=[]
+تم انشاء حلقة for للاعداد من  ١ حتى 
+١٠٠٠ وإختبار شرط التحقق الاعداد 
+الزوجية والعدد الذي لايحقق الشرط تتم 
+إضافته للقائمة على أنه عدد فردي
+Dr. Mohannad Issa, Dr Jamal Khalifeh @ 27/4/2022 3
+i = 0
+while i<5 :
+if lista[i][0]=='p':
+l.append(lista[i])
+i+=1
+if i == 5:
+break
+print(l)
+تم إنشاء كود وتمرير قائمة بأسماء مواد 
+ليتم البحث عن أول حرف من كل كلمة 
+والكلمة التي تبدأ بحرف p تمت اضافتها 
+للقائمة التي عرفناها ومن ثم طباعتها
+i=1
+while i<11:
+a=i
+b=i*i
+lista.setdefault(a,b)
+i+=1
+if i==11:
+ break
+ print(lista)
+تم إنشاء كود وتمرير قائمة بأسماء مواد 
+ليتم البحث عن أول حرف من كل كلمة 
+والكلمة التي تبدأ بحرف p تمت اضافتها 
+للقائمة التي عرفناها ومن ثم طباعتها
+انشأنا قاموس فارغ وحلقة وفي كل مرة 
+نمرر لها key وvalue ليعيد لنا 
+الvalue مربعة
+ومن ثم تخزينها في القاموس المعرف 
+مسبقا وطباعتها
+num = int(input('enter the number'))
+s = 0
+a =[]
+while(num!=0):
+ s=num%2
+ num=num//2
+ a.append(s)
+for i in range(0,1):
+ a.reverse()
+print(a,sep='&&')
+تم تعر يف قائمة فارغة وإنشاء حلقة تقوم 
+بتحويل الرقم العشري الى ثنائي
+بالاعتماد على هذه العمليتين الرياضيتين 
+ومن ثم تخزينها في القائمة الفارغة التي 
+عرفناها ومن ثم طباعتها بشكل معكوس
+import json
+q1="""what is you university name :
+a.tishreen
+b.al baath """
+q2= """ what is the country that you university is located in :
+a.syria
+b.lebanon"""
+q3= """what is the legal age to be in university :
+ a.18
+ b.15 """
+q4= """what is the highest degree in your country :
+ a.medicine
+ b engineering """
+q5= """who established tishreen university :
+ a.prisedent hafez al asaad
+ b.prisedebt bashar al assad """
+q6="""how many years is a engineering degree :
+ a.5
+تم إنشاء ملف json يحتوي على الأسئلة
+مع الخيارات لها..ثم تم تعريف 
+ديكشينري تحتوي على رقم السؤال
+وجوابه ومن ثم تمريرها للملف ومن ثم 
+التعامل مع الملف من خلال ميثود 
+ b.7 """
+q7= """what is the letters that indicates to a doctor :
+ a.d
+ b.s """
+q8= """what is the letters that indicates to an engineer :
+ a.d
+ b.e """
+q9= """what is the best engineering degree :
+ a.telecommunication
+ b.architecture """
+q10="""how many years does a doctor study at college :
+ a.6
+ b.10 """
+q11="""does a phd holder is called doctor :
+ a.yes
+ b.no """
+q12=""" is studying engineering too hard :
+ a.yes
+ b.no """
+q13="""does an engineer has some kind of intelligence :
+a.yes and alot
+b.no not really
+"""
+q14="""does age effect your ability to learn :
+ a.yes
+ b.no """
+q15="""how many times should someone fail to success :
+ a.failing is not a measuring thing
+وفي التنفيذ تم استدعاء ملف ال json
+وتعريف عداد يعبر عن درجة الطالب 
+وتعريف ديكشينري لتخزين فيها اجوبة
+الطالب مع العلامة التي حصل عليها 
+في كل مرة
+Dr. Mohannad Issa, Dr Jamal Khalifeh @ 27/4/2022 7
+b.alot of times """
+q16=""" how many times can a student fail in university :
+ a.3
+ b.unlimited"""
+q17="""does your final score in university is a scale for your intelligence :
+ a.yes
+ b.no """
+q18="""what is the best university in the world :
+ a.harvard
+ b.tishreen """
+q19="""is harvard hard to apply :
+ a.yes
+ b.no """
+q20="""do you love tea :
+ a.yes
+ b.no"""
+dic = { q1:"a" ,
+q2:"b",q3:"a",q4:"a",q5:"a",q6:"a",q7:"a",q8:"b",q9:"a",q10:"a",q11:"a",q12:"a",q13:"a",q14:"a",q15:"b",q16:"a",q17
+:"b",q18:"a",q19:"a",q20:"b"}
+q=json.dumps(dic)
+with open("q.json","w")as f:
+ f.write(q)
+json file :
+import json
+from pprint import pprint
+("البداية")print
+s=0
+q1={}
+L1=[]
+طباعة الاجوبة مع النتيجة النهائية 
+للطالب
+Dr. Mohannad Issa, Dr Jamal Khalifeh @ 27/4/2022 8
+A1=input("enter name: ")
+with open("q.json","r") as f:
+q=json.loads(f.read())
+for i in q :
+ print(i)
+ ans=input("enter the answer a/b :")
+ L1.append(ans)
+ if ans==q[i]:
+ print("correct answer , you got 1 point")
+ s=s+1
+ else:
+ print("wrong answer , you lost 1 point")
+ s=s-1
+q1={A1:L1}
+print(q1)
+print("final score is :",s
